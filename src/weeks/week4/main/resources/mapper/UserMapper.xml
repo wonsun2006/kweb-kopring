@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.kwebkopring.mapper.UserMapper">
+    <select id="getAllUsers" resultType="com.example.kwebkopring.dto.UserDTO">
+        SELECT USER_ID, USER_NAME, ROLE FROM users
+    </select>
+    <select id="joinUser" resultType="com.example.kwebkopring.dto.UserDTO">
+        INSERT INTO users (USER_ID, PASSWORD, USER_NAME, ROLE) VALUES (#{userId}, #{password}, #{userName}, #{role})
+    </select>
+</mapper>
