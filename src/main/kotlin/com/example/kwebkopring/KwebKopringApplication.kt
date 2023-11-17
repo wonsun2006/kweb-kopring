@@ -7,8 +7,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc
 
 @EnableWebMvc
 @SpringBootApplication
-// MyBatis Mapper Scan
-@MapperScan("com.example.kwebkopring.mapper")
 class KwebKopringApplication
 
 fun main(args: Array<String>) {
